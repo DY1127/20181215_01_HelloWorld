@@ -13,40 +13,51 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="10dp"
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
             android:src="@drawable/login_icon02" />
 
     </LinearLayout>
 
-
-
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#171748"
+        android:textStyle="bold"
         android:text="아이디"/>
 
 
     <EditText
+        android:hint="example@example.com"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:imeOptions="actionNext"/>
 
 
     <TextView
         android:layout_marginTop="6dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#171748"
+
+        android:textStyle="bold"
         android:text="비밀번호"/>
 
 
     <EditText
+        android:hint="000000"
+        android:inputType="numberPassword"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:imeOptions="actionGo"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -56,6 +67,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="150dp"
+            android:checked="true"
+            android:textColor="#171748"
             android:text="기억하기"/>
 
         <Button
@@ -73,22 +86,49 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="회원가입"/>
+            android:textColor="#171748"
+            android:text="회원가입" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:text="|"/>
+            android:textSize="20sp"
+            android:textColor="#171748"
+            android:text="|" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="암호를 분실하셨나요?"/>
+            android:textColor="#171748"
+            android:text="암호를 분실하셨나요?" />
 
 
     </LinearLayout>
 
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="안눌림"
+        android:textOn="눌림"/>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="일반회원"/>
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="법인회원"/>
+
+    </RadioGroup>
 
 </LinearLayout>
